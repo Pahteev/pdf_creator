@@ -6247,9 +6247,17 @@
     "maker": "AGC",
     "name": "MITSUBISHI PAJERO III/PAJERO IV/SHOGUN 2003- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ/ГОЛУБАЯ ПОЛОСА -ИЗМЕНЕНИЕ ДЕРЖАТЕЛЯ ЗЕРКАЛА"
   },
+  "4141AGNBLHMV": {
+    "maker": "AGC",
+    "name": "HYUNDAI iX35 2013- ветровое зеленое/голубая полоса-обогрев зоны дворников-д.д/с-VIN"
+  },
   "MITT0209": {
     "maker": "KMK GLASS",
     "name": "Mitsubishi \"Pajero\" III (99-06) | \"Pajero\" IV (06-) '1999- #5661AGNBLM1P держ.зерк.+датч.дожд."
+  },
+  "HYNT0004": {
+    "maker": "KMK GLASS",
+    "name": "Hyundai \"Accent\" II | \"Accent\" II Тагаз (01-12) '2000-2005 #4118 ЗП ТЗ"
   },
   "5661AGNBLM1P": {
     "maker": "KMK GLASS",
@@ -10074,6 +10082,10 @@
   "2732BCLH": {
     "maker": "KMK GLASS",
     "name": "Citroen \"C4\" I 3D Hbk '2004-2010 #2732 заднее верхнее ЭО"
+  },
+  "3038AGNBLV": {
+    "maker": "KMK GLASS",
+    "name": "Chevrolet \"Cobalt\" II // Ravon \"R4\" (16-20) 4D Sed '2011-2016 #3038 ЗП ТЗ"
   },
   "CITS0011": {
     "maker": "KMK GLASS",
@@ -16711,6 +16723,10 @@
     "maker": "KMK GLASS",
     "name": "Toyota \"Avensis\" III 4D Sed / 5D Wagon '2008- #8379 ЗП ТЗ (обогрев щеток)"
   },
+  "SKDT0004": {
+    "maker": "KMK GLASS",
+    "name": "Skoda \"Octavia\" I Tour 5D Lbk / 5D Est '1996-2011 #7807 ЗП ТЗ"
+  },
   "8379AGNBLHV": {
     "maker": "KMK GLASS",
     "name": "Toyota \"Avensis\" III 4D Sed / 5D Wagon '2008- #8379 ЗП ТЗ (обогрев щеток)"
@@ -20723,6 +20739,10 @@
     "maker": "KMK GLASS",
     "name": "Honda \"Accord\" VI CF3/CF4/CF5 | \"Torneo\" CF3 '1997-2002 (CF4) ЗП ТЗ"
   },
+  "EXDT0009": {
+    "maker": "KMK GLASS",
+    "name": "Exeed \"RX\" I 5D Suv '2023- ТЗ ДД камера (антенна) (без ЗП)"
+  },
   "HONT0005": {
     "maker": "KMK GLASS",
     "name": "Honda \"Accord\" V // Rover \"600\" (93-99) 4D Sed '1993-1998 #3949 ЗП ТЗ"
@@ -21440,8 +21460,8 @@
     "name": "Hyundai \"Solaris\" I | \"Accent\" IV // Kia \"Rio\" III (11-17) '2010-2017 #4148 ЗП ТЗ"
   },
   "4148AGNBLV": {
-    "maker": "AGC",
-    "name": "HYUNDAI SOLARIS 2010-/KIA RIO 2011- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ/ГОЛУБАЯ ПОЛОСА -VIN ОКНО"
+    "maker": "KMK GLASS",
+    "name": "Hyundai \"Solaris\" I | \"Accent\" IV // Kia \"Rio\" III (11-17) '2010-2017 #4148 ЗП ТЗ"
   },
   "HYNT0045": {
     "maker": "KMK GLASS",
@@ -21520,8 +21540,8 @@
     "name": "Hyundai \"Accent\" II | \"Accent II\" Тагаз (01-12) '2000-2005 #4118 бесцветное (без ЗП)"
   },
   "4118ACL": {
-    "maker": "AGC",
-    "name": "HYUNDAI ACCENT II 2000- СТЕКЛО ВЕТРОВОЕ ПРОЗРАЧНОЕ"
+    "maker": "KMK GLASS",
+    "name": "Hyundai \"Accent\" II | \"Accent II\" Тагаз (01-12) '2000-2005 #4118 бесцветное (без ЗП)"
   },
   "HYNT0159": {
     "maker": "KMK GLASS",
@@ -22804,8 +22824,8 @@
     "name": "Mercedes \"E-Class W124\" I 4D Sed / 5D Est '1984-1997 #5328 ЗП ТЗ"
   },
   "5328AGNBL": {
-    "maker": "AGC",
-    "name": "MERCEDES 200-300 W124 85- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ/СОЛНЦЕЗАЩИТНАЯ ПОЛОСА"
+    "maker": "KMK GLASS",
+    "name": "Mercedes \"E-Class W124\" I 4D Sed / 5D Est '1984-1997 #5328 ЗП ТЗ"
   },
   "MERT0030": {
     "maker": "KMK GLASS",
@@ -23275,6 +23295,10 @@
     "maker": "AGC",
     "name": "MITSUBISHI LANCER/EVO/CEDIA VII 4D СЕД/5D УН 2000-  СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ/ГОЛУБАЯ ПОЛОСА"
   },
+  "2445AGSMV6T": {
+    "maker": "AGC",
+    "name": "BMW 5 E60 07-10 ветровое зеленое-solar-датчик света/дождя-VIN-изменение датчика и шелкографии"
+  },
   "MITT0031": {
     "maker": "KMK GLASS",
     "name": "Mitsubishi \"Lancer\" VII 4D Sed '1995-2000 #5648 ЗП ТЗ"
@@ -23282,6 +23306,18 @@
   "5648AGNBL": {
     "maker": "KMK GLASS",
     "name": "Mitsubishi \"Lancer\" VII 4D Sed '1995-2000 #5648 ЗП ТЗ"
+  },
+  "RENT0099": {
+    "maker": "KMK GLASS",
+    "name": "Renault \"Kaptur\" 5D Suv '2016- #7304 ТЗ ДД (полный обогрев) коннекторы"
+  },
+  "IZHT0002": {
+    "maker": "KMK GLASS",
+    "name": "ИЖ \"2126\" Ода '1990-2005 #4582 полоса"
+  },
+  "KIAT0211": {
+    "maker": "KMK GLASS",
+    "name": "Kia \"Rio\" IV 4D Sed / 5D Hbk '2017- #4456 ЗП ТЗ"
   },
   "MITT0033": {
     "maker": "KMK GLASS",
@@ -25296,7 +25332,7 @@
     "name": "Renault \"Logan\" I 4D Sed // Лада \"Ларгус\" (12-) '2004-2013 #7264 ЗП ТЗ"
   },
   "7264AGNBL": {
-    "maker": "BOR",
+    "maker": "БОР",
     "name": "RENAULT LOGAN I/MCV/ LADA LARGUS 2005- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ/ГОЛУБАЯ ПОЛОСА"
   },
   "RENT0024": {
@@ -32060,8 +32096,8 @@
     "name": "ВАЗ \"2108,09,099,13,14,15\" 3/5D Hbk / 4D Sed '1984-2013 #4502"
   },
   "4502ACL": {
-    "maker": "AGC",
-    "name": "ВАЗ 2108/2109/2113/2114/2115/21099 СТЕКЛО ВЕТРОВОЕ БЕСЦВЕТНОЕ"
+    "maker": "KMK GLASS",
+    "name": "ВАЗ \"2108,09,099,13,14,15\" 3/5D Hbk / 4D Sed '1984-2013 #4502"
   },
   "VAZT0037": {
     "maker": "KMK GLASS",
@@ -32164,16 +32200,16 @@
     "name": "ВАЗ \"2121\" 3D Suv | \"2131\" (93-) 5D Suv '1977- #4501"
   },
   "4501ACL": {
-    "maker": "AGC",
-    "name": "ВАЗ 2121/2131 NIVA 4x4 СТЕКЛО ВЕТРОВОЕ БЕСЦВЕТНОЕ"
+    "maker": "KMK GLASS",
+    "name": "ВАЗ \"2121\" 3D Suv | \"2131\" (93-) 5D Suv '1977- #4501"
   },
   "VAZT0069": {
     "maker": "KMK GLASS",
     "name": "ВАЗ \"2121\" 3D Suv | \"2131\" (93-) 5D Suv '1977- #4501 полоса"
   },
   "4501ACLBL": {
-    "maker": "AGC",
-    "name": "ВАЗ 2121/2131 NIVA 4x4 СТЕКЛО ВЕТРОВОЕ БЕСЦВЕТНОЕ - ЗАЩИТНАЯ ПОЛОСА"
+    "maker": "KMK GLASS",
+    "name": "ВАЗ \"2121\" 3D Suv | \"2131\" (93-) 5D Suv '1977- #4501 полоса"
   },
   "VAZT0070": {
     "maker": "KMK GLASS",
@@ -32184,7 +32220,7 @@
     "name": "ВАЗ \"2121\" 3D Suv | \"2131\" (93-) 5D Suv '1977- #4501 полоса ТЗ"
   },
   "4501AGNBL": {
-    "maker": "AGC",
+    "maker": "KMK GLASS",
     "name": "ВАЗ 2121/2131 NIVA 4x4 СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ TINTED - ЗАЩИТНАЯ ПОЛОСА"
   },
   "VAZT0075": {
@@ -32207,6 +32243,30 @@
     "maker": "AGC",
     "name": "ВАЗ 2123/ CHEVROLET NIVA СТЕКЛО ВЕТРОВОЕ БЕСЦВЕТНОЕ - КАНТ - БЕЗ ДЕРЖАТЕЛЯ ЗЕРКАЛА"
   },
+  "6312AGSVZ1M": {
+    "maker": "AGC",
+    "name": "OPEL CORSA D 2006- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ - SOLAR CONTROL -VIN ОКНО-ИНКАПСУЛЯЦИЯ"
+  },
+  "6962716": {
+    "maker": "AGC",
+    "name": "Toyota RAV4 III 2006- ветр.зел.+шумоизол-обогр дворн-VIN-доп оборудование"
+  },
+  "8579AGSGYAVZ1B": {
+    "maker": "AGC",
+    "name": "Volkswagen Transporter T5/Multivan 2003- ветр.зел. Solar/серая пол-ант-VIN-инк-изм шелк"
+  },
+  "4030812": {
+    "maker": "AGC",
+    "name": "TOYOTA CAMRY VI 4D СЕД 2006- ВЕТРОВОЕ ЗЕЛЕНОЕ/ЗЕЛЕНАЯ ПОЛОСА -Д СВЕТА/ДОЖДЯ-VIN"
+  },
+  "5179AGAW": {
+    "maker": "AGC",
+    "name": "MAZDA CX-5 2011- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ + ШУМОИЗОЛЯЦИЯ -ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ"
+  },
+  "5684AGN": {
+    "maker": "AGC",
+    "name": "MITSUBISHI LANCER 10 2007- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ"
+  },
   "VAZT0084": {
     "maker": "KMK GLASS",
     "name": "ВАЗ \"2123\" 5D Suv '2002-2018 #4544 полоса"
@@ -32228,8 +32288,8 @@
     "name": "ВАЗ \"2190\" (Гранта) '2011- #4599"
   },
   "4599ACL": {
-    "maker": "AGC",
-    "name": "ВАЗ 2190/2191 LADA GRANTA I/2192/2194 KALINA II/DATSUN ON-DO/MI-DO СТЕКЛО ВЕТРОВОЕ БЕСЦВЕТНОЕ С ДЕРЖАТЕЛЕМ ЗЕРКАЛА"
+    "maker": "KMK GLASS",
+    "name": "ВАЗ \"2190\" (Гранта) '2011- #4599"
   },
   "VAZT0090": {
     "maker": "KMK GLASS",
@@ -32300,7 +32360,7 @@
     "name": "УАЗ \"3151\" (85-13) | \"315195\" (Hunter) (03-) 5D Suv `1985- #4531"
   },
   "4531ACL6Y": {
-    "maker": "AGC",
+    "maker": "KMK GLASS",
     "name": "УАЗ 3151 СТЕКЛО ВЕТРОВОЕ БЕСЦВЕТНОЕ"
   },
   "YAZT0002": {
@@ -32364,8 +32424,8 @@
     "name": "УАЗ \"452\" `1965- #4534"
   },
   "4534ACL": {
-    "maker": "AGC",
-    "name": "УАЗ 452 СТЕКЛО ВЕТРОВОЕ БЕСЦВЕТНОЕ"
+    "maker": "KMK GLASS",
+    "name": "УАЗ \"452\" `1965- #4534"
   },
   "YAZT0014": {
     "maker": "KMK GLASS",
@@ -37949,7 +38009,7 @@
   },
   "2485AGAIMUVZ": {
     "maker": "AGC",
-    "name": "BMW 5 SERIES G30/G31 2017- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ + ШУМОИЗОЛЯЦИЯ -ДАТЧИК СВЕТА/ДОЖДЯ- HUD -VIN ОКНО-ИНКАПСУЛЯЦИЯ"
+    "name": "BMW 5 G30/G31 2017- ветр.зеленое+шумоиз-д. света/дождя-HUD-VIN-инк"
   },
   "6970144": {
     "maker": "AGC",
@@ -38716,10 +38776,6 @@
     "name": "NDG CHEVROLET CAPTIVA 2006-2016/OPEL ANTARA 2007- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ SOLAR CONTROL/ГОЛУБАЯ ПОЛОСА -МЕСТО ДЛЯ ДАТЧИКА СВЕТА/ ДОЖДЯ-VIN ОКНО- ИЗМЕНЕНИЕ ШЕЛКОГРАФИИ"
   },
   "4033025": {
-    "maker": "AGC",
-    "name": "CHEVROLET COBALT 2011-/RAVON R4 2016- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ/ГОЛУБАЯ ПОЛОСА -VIN ОКНО"
-  },
-  "3038AGNBLV": {
     "maker": "AGC",
     "name": "CHEVROLET COBALT 2011-/RAVON R4 2016- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ/ГОЛУБАЯ ПОЛОСА -VIN ОКНО"
   },
@@ -39633,7 +39689,7 @@
   },
   "3565AGSMVW2P": {
     "maker": "AGC",
-    "name": "FORD FOCUS C-MAX 2007- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ - SOLAR CONTROL -ДАТЧИК СВЕТА/ДОЖДЯ-VIN ОКНО-ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ-ИЗМЕНЕНИЕ ДЕРЖАТЕЛЯ ЗЕРКАЛА +ИЗМЕНЕНИЕ ШЕЛКОГРАФИИ"
+    "name": "FORD FOCUS C-MAX 2007- ветровое зеленое-solar control-датчик дождя/света-VIN-изм д.з.+изм шелкографии"
   },
   "6962305": {
     "maker": "AGC",
@@ -41393,7 +41449,7 @@
   },
   "4180AGNBLMOV": {
     "maker": "AGC",
-    "name": "HYUNDAI SONATA LF 2014- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ/ГОЛУБАЯ ПОЛОСА -ДАТЧИК СВЕТА/ДОЖДЯ-ДАТЧИК ТУМАНА-VIN ОКНО"
+    "name": "HYUNDAI SONATA LF 2014- ветр.зел/голубая полоса-д.света/дождя-д.тумана-VIN"
   },
   "6971794": {
     "maker": "AGC",
@@ -42405,7 +42461,7 @@
   },
   "4447AGABLHIMOVW": {
     "maker": "AGC",
-    "name": "KIA SPORTAGE 2016-СТЕКЛО ВЕТРОВОЕ-ЗЕЛЕНОЕ/ГОЛУБАЯ ПОЛОСА-ШУМОИЗОЛЯЦИЯ-ОБОГРЕВ-ДАТЧИК ДОЖДЯ-VIN ОКНО-ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ"
+    "name": "KIA SPORTAGE 2016-ветровое зеленое/полоса-шумоиз-обогрев-д.дождя-VIN-доп оборудование"
   },
   "6967863": {
     "maker": "AGC",
@@ -42465,7 +42521,7 @@
   },
   "4447AGABLVW": {
     "maker": "AGC",
-    "name": "KIA SPORTAGE 2016- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ + ШУМОИЗОЛЯЦИЯ/ГОЛУБАЯ ПОЛОСА\n -VIN ОКНО-ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ"
+    "name": "KIA SPORTAGE 2016- ВЕТРОВОЕ ЗЕЛЕНОЕ + ШУМОИЗОЛЯЦИЯ/ГОЛУБАЯ ПОЛОСА\n -VIN ОКНО-ДОП ОБОРУДОВАНИЕ"
   },
   "6967819": {
     "maker": "AGC",
@@ -43289,7 +43345,7 @@
   },
   "5171AGNP1B": {
     "maker": "Nordglass",
-    "name": "NDG MAZDA CX-7 2007- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ -МЕСТО ПОД ДАТЧИК СВЕТА/ДОЖДЯ- ИЗМЕНЕНИЕ ШЕЛКОГРАФИИ (без молдинга)"
+    "name": "MAZDA CX-7 2007- ветр.зел.-место под д.света/дождя-изм шелк (без молдинга)"
   },
   "6970987": {
     "maker": "Nordglass",
@@ -47637,7 +47693,7 @@
   },
   "6964675": {
     "maker": "AGC",
-    "name": "TOYOTA COROLLA 2006- СТЕКЛО ВЕТРОВОЕ ЗЕЛЕНОЕ -ДАТЧИК СВЕТА/ДОЖДЯ-ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ-ИЗМЕНЕНИЕ ШЕЛКОГРАФИИ"
+    "name": "TOYOTA COROLLA 2006-ветровое зеленое-д. дождя/света-доп оборудование-изменение шелкографии"
   },
   "4138739": {
     "maker": "Nordglass",

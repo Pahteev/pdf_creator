@@ -1,6 +1,6 @@
 from reportlab.lib.pagesizes import mm
 from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 from reportlab.lib.units import mm
@@ -19,7 +19,7 @@ def generate_pdf(product_name, article_number, maker, logo_path="", file_name='o
 
     # Создаем документ с нужными размерами
     doc = SimpleDocTemplate(file_name, pagesize=(page_width, page_height),
-                            rightMargin=3 * mm, leftMargin=3 * mm, topMargin=3 * mm, bottomMargin=3 * mm)
+                            rightMargin=3 * mm, leftMargin=3 * mm, topMargin=2 * mm, bottomMargin=1 * mm)
 
     # Подключаем шрифт Roboto
     pdfmetrics.registerFont(TTFont('Roboto', 'Roboto-Regular.ttf'))  # Указываем путь к файлу шрифта
@@ -35,20 +35,28 @@ def generate_pdf(product_name, article_number, maker, logo_path="", file_name='o
     elements.append(Paragraph(f"Производитель: {maker}", styleN))
     elements.append(Paragraph(f"Артикул: {article_number}", styleN))
     elements.append(Paragraph(f"Наименование: {product_name}", styleN))
-    # elements.append(Paragraph(f"Для: autodoc.ru", styleN))
+    elements.append(Paragraph(f"Для: autodoc.ru", styleN))
 
     # Добавляем отступ сверху перед логотипом
-    elements.append(Spacer(1, 10 * mm))  # Отступ 10 мм сверху
+    elements.append(Spacer(1, 5 * mm))  # Отступ 10 мм сверху
+
+    # Добавляем логотип (PNG)
+    if logo_path:
+        logo_width = 20 * mm  # Максимальная ширина логотипа
+        logo = Image(logo_path)  # Высота вычисляется автоматически
+        logo.hAlign = 'CENTER'  # Выравнивание по центру
+        elements.append(logo)
 
     # Чтение и масштабирование SVG логотипа
-    drawing = svg2rlg(logo_path)
+    # drawing = svg2rlg(logo_path)
 
     # Масштабируем логотип, чтобы его ширина была максимум 40 мм
-    scale_factor = (40 * mm) / drawing.width  # Рассчитываем масштабирование по ширине
-    drawing.width = 40 * mm
-    drawing.height = drawing.height * scale_factor  # Пропорционально изменяем высоту
-    drawing.scale(scale_factor, scale_factor)  # Применяем масштабирование
-    elements.append(drawing)  # Добавляем логотип
+    # scale_factor = (40 * mm) / drawing.width  # Рассчитываем масштабирование по ширине
+    # drawing.width = 40 * mm
+    # drawing.height = drawing.height * scale_factor  # Пропорционально изменяем высоту
+    # drawing.scale(scale_factor, scale_factor)  # Применяем масштабирование
+    # elements.append(drawing)  # Добавляем логотип
+
 
     # Генерируем PDF с элементами
     doc.build(elements)
@@ -84,11 +92,16 @@ def select_files():
 
 def read_orders_autodoc(file_path):
     """Открываем заказы автодок"""
+    return pd.read_excel(file_path, usecols=['Производитель', 'Арт. детали', 'Кол-во'])
+
+
+def read_orders_autoto(file_path):
+    """Открываем заказы автото"""
     return pd.read_excel(file_path, header=4)
 
 
 def main():
-    data_file = read_json(file_name="data_info", file_path="data/")
+    data_file = read_json(file_name="info_codes", file_path="data/")
     # Вызываем функцию для выбора файлов
     selected_files = select_files()
     df = pd.DataFrame()
@@ -96,10 +109,11 @@ def main():
     for file_path in selected_files:
         df_autodoc = read_orders_autodoc(file_path)
         df = pd.concat([df_autodoc, df], ignore_index=True)
+    print(df)
     for i in range(len(df)):
-        name = data_file[df['Артикул'][i]]['name']
-        maker = data_file[df['Артикул'][i]]['maker']
-        generate_pdf(name, df['Артикул'][i], maker, logo_path="static/img/logo_autoto.svg", file_name=f"output_img/{df['Артикул'][i]}.pdf")
+        name = data_file[df['Производитель'][i]][df['Арт. детали'][i]]
+        maker = df['Производитель'][i]
+        generate_pdf(name, df['Арт. детали'][i], maker, file_name=f"output_img/{df['Арт. детали'][i]}.pdf")
 
 
 if __name__ == "__main__":
