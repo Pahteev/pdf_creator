@@ -35,27 +35,27 @@ def generate_pdf(product_name, article_number, maker, logo_path="", file_name='o
     elements.append(Paragraph(f"Производитель: {maker}", styleN))
     elements.append(Paragraph(f"Артикул: {article_number}", styleN))
     elements.append(Paragraph(f"Наименование: {product_name}", styleN))
-    elements.append(Paragraph(f"Для: autodoc.ru", styleN))
+    # elements.append(Paragraph(f"Для: autodoc.ru", styleN))
 
     # Добавляем отступ сверху перед логотипом
     elements.append(Spacer(1, 5 * mm))  # Отступ 10 мм сверху
 
     # Добавляем логотип (PNG)
-    if logo_path:
-        logo_width = 20 * mm  # Максимальная ширина логотипа
-        logo = Image(logo_path)  # Высота вычисляется автоматически
-        logo.hAlign = 'CENTER'  # Выравнивание по центру
-        elements.append(logo)
+    # if logo_path:
+    #     logo_width = 20 * mm  # Максимальная ширина логотипа
+    #     logo = Image(logo_path)  # Высота вычисляется автоматически
+    #     logo.hAlign = 'CENTER'  # Выравнивание по центру
+    #     elements.append(logo)
 
     # Чтение и масштабирование SVG логотипа
-    # drawing = svg2rlg(logo_path)
+    drawing = svg2rlg(logo_path)
 
-    # Масштабируем логотип, чтобы его ширина была максимум 40 мм
-    # scale_factor = (40 * mm) / drawing.width  # Рассчитываем масштабирование по ширине
-    # drawing.width = 40 * mm
-    # drawing.height = drawing.height * scale_factor  # Пропорционально изменяем высоту
-    # drawing.scale(scale_factor, scale_factor)  # Применяем масштабирование
-    # elements.append(drawing)  # Добавляем логотип
+#     Масштабируем логотип, чтобы его ширина была максимум 40 мм
+    scale_factor = (40 * mm) / drawing.width  # Рассчитываем масштабирование по ширине
+    drawing.width = 40 * mm
+    drawing.height = drawing.height * scale_factor  # Пропорционально изменяем высоту
+    drawing.scale(scale_factor, scale_factor)  # Применяем масштабирование
+    elements.append(drawing)  # Добавляем логотип
 
 
     # Генерируем PDF с элементами
@@ -92,7 +92,7 @@ def select_files():
 
 def read_orders_autodoc(file_path):
     """Открываем заказы автодок"""
-    return pd.read_excel(file_path, usecols=['Производитель', 'Арт. детали', 'Кол-во'])
+    return pd.read_excel(file_path, usecols=['Марка', 'DETAIL_NUM', 'ORDER_Q_TY'])
 
 
 def read_orders_autoto(file_path):
@@ -111,9 +111,14 @@ def main():
         df = pd.concat([df_autodoc, df], ignore_index=True)
     print(df)
     for i in range(len(df)):
-        name = data_file[df['Производитель'][i]][df['Арт. детали'][i]]
-        maker = df['Производитель'][i]
-        generate_pdf(name, df['Арт. детали'][i], maker, file_name=f"output_img/{df['Арт. детали'][i]}.pdf")
+        df.loc[i, 'DETAIL_NUM'] = df['DETAIL_NUM'][i].replace("'", "")
+        name = data_file[df['Марка'][i]][df['DETAIL_NUM'][i]]
+        maker = df['Марка'][i]
+        # generate_pdf(name, df['DETAIL_NUM'][i], maker, logo_path="static/img/logo_autostels.png", file_name=f"output_img/{maker}_{df['DETAIL_NUM'][i]}.pdf")
+        generate_pdf(name, df['DETAIL_NUM'][i], maker, logo_path="static/img/logo_autoto.svg",
+                     file_name=f"output_img/{maker}_{df['DETAIL_NUM'][i]}.pdf")
+        # generate_pdf(name, df['DETAIL_NUM'][i], maker, logo_path="",
+        #              file_name=f"output_img/{maker}_{df['DETAIL_NUM'][i]}.pdf")
 
 
 if __name__ == "__main__":
