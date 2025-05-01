@@ -20,7 +20,7 @@ def generate_pdf(product_name, article_number, maker, logo_path="", file_name='o
 
     # Создаем документ с нужными размерами
     doc = SimpleDocTemplate(file_name, pagesize=(page_width, page_height),
-                            rightMargin=3 * mm, leftMargin=3 * mm, topMargin=2 * mm, bottomMargin=1 * mm)
+                            rightMargin=1 * mm, leftMargin=1 * mm, topMargin=2 * mm, bottomMargin=1 * mm)
 
     # Подключаем шрифт Roboto
     pdfmetrics.registerFont(TTFont('Roboto', 'Roboto-Regular.ttf'))  # Указываем путь к файлу шрифта
